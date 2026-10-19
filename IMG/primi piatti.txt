@@ -1,0 +1,10 @@
+<html>
+<head>
+</head>
+<body>
+<h2> primi piatti </h2>
+<h3> spaghetti alle vongole	15€</h3>
+<p> spaghetti, pomodori freschi, vongole del mediterraneo, aglio, prezzemolo, peperoncino rosso</p>
+<img src="C:\Users\studente.ISA-11\Downloads\Spaghetti-alle-vongole-e-pomodorini-Ricetta-Spaghetti-con-vongole-e-pomodorini.webp" alt= spaghetti alle vongole>
+</body>
+</html>
