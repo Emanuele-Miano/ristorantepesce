@@ -4,3 +4,4 @@ ogni sviluppatore ha un compito differente:
 -Damiano Nucci: antipasti e bevande
 -Gabriele Sommese: Primi piatti
 -Teddy Tudor: Secondi
+-Emanuele Miano: project manager
