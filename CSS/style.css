@@ -92,3 +92,13 @@ section:nth-child(even) {
 .hero {
   text-align: center;
 }
+
+.tm-list-item {
+  display: flex;
+  flex-direction: column;   /* foto sopra, testo sotto */
+  align-items: center;      /* centra la foto */
+  text-align: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(201, 162, 75, 0.25);
+}
