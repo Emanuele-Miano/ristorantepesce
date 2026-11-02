@@ -102,3 +102,26 @@ section:nth-child(even) {
   padding: 2rem 0;
   border-bottom: 1px solid rgba(201, 162, 75, 0.25);
 }
+
+.chi-siamo {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.chi-siamo h2::after {
+  margin-left: auto;
+  margin-right: auto;   /* centra la lineetta dorata sotto il titolo */
+}
+
+.chi-siamo p {
+  margin-bottom: 1.5rem;
+}
+
+.chi-siamo .firma {
+  font-family: var(--font-titoli);
+  font-size: 1.6rem;
+  font-style: italic;
+  color: var(--oro);
+}
