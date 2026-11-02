@@ -26,6 +26,7 @@ h1, h2, h3 {
   font-family: var(--font-titoli);
   font-weight: 400;
   color: var(--oro);
+  text-align: center;
 }
 
 h1 {
