@@ -22,7 +22,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: var(--font-titoli);
   font-weight: 400;
   color: var(--oro);
