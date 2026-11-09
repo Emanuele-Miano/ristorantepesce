@@ -1,0 +1,128 @@
+
+
+:root {
+  --nero: #0a0a0a;
+  --nero-soft: #141414;
+  --oro: #c9a24b;
+  --oro-chiaro: #e6c878;
+  --oro-scuro: #8a6d2b;
+  --testo: #e8e2d4;
+  --testo-tenue: #a39c8b;
+
+  --font-titoli: 'Cormorant Garamond', Georgia, serif;
+  --font-testo: 'Montserrat', Arial, sans-serif;
+}
+
+body {
+  background-color: var(--nero);
+  color: var(--testo);
+  font-family: var(--font-testo);
+  font-weight: 300;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+h1, h2 {
+  font-family: var(--font-titoli);
+  font-weight: 400;
+  color: var(--oro);
+  text-align: center;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  /* effetto oro sfumato */
+  background: linear-gradient(135deg, var(--oro-scuro), var(--oro-chiaro), var(--oro));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  letter-spacing: 0.08em;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+/* sottile linea dorata sotto gli h2 */
+h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: var(--oro);
+  margin-top: 1rem;
+}
+
+a {
+  color: var(--oro);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--oro-chiaro);
+}
+
+/* sezioni alternate per dare profondità */
+section:nth-child(even) {
+  background-color: var(--nero-soft);
+}
+
+/* bottone di esempio */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 2.2rem;
+  border: 1px solid var(--oro);
+  color: var(--oro);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--oro);
+  color: var(--nero);
+}
+
+.hero {
+  text-align: center;
+}
+
+.tm-list-item {
+  display: flex;
+  flex-direction: column;   /* foto sopra, testo sotto */
+  align-items: center;      /* centra la foto */
+  text-align: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(201, 162, 75, 0.25);
+}
+
+.chi-siamo {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.chi-siamo h2::after {
+  margin-left: auto;
+  margin-right: auto;   /* centra la lineetta dorata sotto il titolo */
+}
+
+.chi-siamo p {
+  margin-bottom: 1.5rem;
+}
+
+.chi-siamo .firma {
+  font-family: var(--font-titoli);
+  font-size: 1.6rem;
+  font-style: italic;
+  color: var(--oro);
+}
